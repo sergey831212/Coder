@@ -1,0 +1,36 @@
+```
+# Compiled and build artifacts
+*.pyc
+__pycache__/
+
+# Logs and temp files
+*.log
+*.tmp
+*.swp
+
+# Environment
+.env
+.env.local
+*.env.*
+
+# Editors
+.vscode/
+.idea/
+
+# Dependencies
+.venv/
+venv/
+node_modules/
+
+# Coverage and testing
+.coverage
+coverage/
+htmlcov/
+.mypy_cache/
+.pytest_cache/
+
+# Build directories
+dist/
+build/
+target/
+```
