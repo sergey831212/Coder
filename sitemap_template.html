@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Карта сайта Артерия-Фарм</title>
+    <style>
+        body {
+            font-family: 'Carlito', Arial, sans-serif;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f9fb;
+        }
+        h1 {
+            color: #25aae2;
+            text-align: center;
+            border-bottom: 3px solid #25aae2;
+            padding-bottom: 15px;
+        }
+        h2 {
+            color: #404b50;
+            background-color: #e8f4f8;
+            padding: 10px 15px;
+            border-left: 5px solid #25aae2;
+            margin-top: 40px;
+        }
+        h3 {
+            color: #5a6b7c;
+            border-bottom: 1px solid #cbedfc;
+            padding-bottom: 5px;
+            margin-top: 25px;
+        }
+        .section {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+        .stat-card {
+            background: linear-gradient(135deg, #25aae2, #1a8bb8);
+            color: white;
+            padding: 20px 30px;
+            border-radius: 10px;
+            margin: 10px;
+            text-align: center;
+            min-width: 150px;
+        }
+        .stat-card .number {
+            font-size: 2em;
+            font-weight: bold;
+        }
+        .stat-card .label {
+            font-size: 0.9em;
+            opacity: 0.9;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        li {
+            padding: 5px 0;
+        }
+        a {
+            color: #25aae2;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        a:hover {
+            color: #1a8bb8;
+            text-decoration: underline;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 10px;
+        }
+        .product-item {
+            background: #f9fbfd;
+            padding: 8px 12px;
+            border-radius: 5px;
+            border: 1px solid #e8f4f8;
+        }
+        .product-item:hover {
+            background: #e8f4f8;
+        }
+        .toc {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin: 20px 0;
+        }
+        .toc ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .toc li {
+            background: #25aae2;
+            padding: 8px 15px;
+            border-radius: 20px;
+        }
+        .toc a {
+            color: white;
+            font-weight: bold;
+        }
+        .category-group {
+            margin: 15px 0;
+            padding: 15px;
+            background: #fafbfc;
+            border-radius: 5px;
+        }
+        .category-title {
+            font-weight: bold;
+            color: #25aae2;
+            margin-bottom: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            color: #666;
+            border-top: 1px solid #ddd;
+        }
+        .generated-date {
+            text-align: center;
+            color: #999;
+            font-size: 0.9em;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>🗺️ Карта сайта Артерия-Фарм</h1>
+    <p style="text-align: center; color: #666; max-width: 800px; margin: 20px auto;">
+        Подробная карта всех страниц сайта arteria-farm.com включая товары, статьи, авторов, бренды и категории заболеваний
+    </p>
+
+    <div class="stats">
+        <div class="stat-card">
+            <div class="number">3108</div>
+            <div class="label">Всего URL</div>
+        </div>
+        <div class="stat-card">
+            <div class="number">2922</div>
+            <div class="label">Товары</div>
+        </div>
+        <div class="stat-card">
+            <div class="number">44</div>
+            <div class="label">Статьи</div>
+        </div>
+        <div class="stat-card">
+            <div class="number">21</div>
+            <div class="label">Авторов</div>
+        </div>
+        <div class="stat-card">
+            <div class="number">121</div>
+            <div class="label">Брендов</div>
+        </div>
+        <div class="stat-card">
+            <div class="number">536</div>
+            <div class="label">Категорий</div>
+        </div>
+    </div>
+
+    <div class="toc">
+        <h3 style="margin-top: 0;">📑 Быстрая навигация:</h3>
+        <ul>
+            <li><a href="#products">💊 Товары</a></li>
+            <li><a href="#articles">📰 Статьи</a></li>
+            <li><a href="#authors">✍️ Авторы</a></li>
+            <li><a href="#brands">🏷️ Бренды</a></li>
+            <li><a href="#categories">📂 Категории и заболевания</a></li>
+        </ul>
+    </div>
+
+    <div class="section" id="products">
+        <h2>💊 Товары (Продукты)</h2>
+        <p>Все лекарственные препараты и медицинские изделия, представленные на сайте</p>
+        <div class="product-grid">
+PRODUCTS_PLACEHOLDER
+        </div>
+    </div>
+
+    <div class="section" id="articles">
+        <h2>📰 Статьи</h2>
+        <p>Публикации о здоровье, лекарствах и медицине</p>
+        <ul>
+ARTICLES_PLACEHOLDER
+        </ul>
+    </div>
+
+    <div class="section" id="authors">
+        <h2>✍️ Авторы</h2>
+        <p>Авторы и эксперты, публикующие материалы на сайте</p>
+        <ul>
+AUTHORS_PLACEHOLDER
+        </ul>
+    </div>
+
+    <div class="section" id="brands">
+        <h2>🏷️ Бренды (Производители)</h2>
+        <p>Фармацевтические компании и производители</p>
+        <ul>
+BRANDS_PLACEHOLDER
+        </ul>
+    </div>
+
+    <div class="section" id="categories">
+        <h2>📂 Категории и Заболевания</h2>
+        <p>Категории товаров и медицинские показания</p>
+        <ul>
+CATEGORIES_PLACEHOLDER
+        </ul>
+    </div>
+
+    <footer>
+        <p>Карта сайта создана на основе данных с arteria-farm.com</p>
+        <p class="generated-date">Дата генерации: 2025</p>
+    </footer>
+</body>
+</html>
